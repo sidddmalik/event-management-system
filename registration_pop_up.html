@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="registration_pop_up.css">
+  </head>
+  <body>
+    <h1>Registration Page</h1>
+    <form action="test.php">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="full_name" placeholder="Full Name" required>
+      
+      <label for="username">Username</label>
+      <input type="text" name="username" placeholder="Username" pattern="[A-Z]{1-3}[0-9]{3}" required>
+      
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Email" required>
+      
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" placeholder="Phone Number" pattern="[789][0-9]{9}" required>
+      
+      <label for="gender">Gender</label> 
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+        <option value="o">Other</option>
+      </select>
+      
+      <label for="password">Password</label>
+      <input type="password" name="pasword" placeholder="Password" required>
+      
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      
+      <button type="submit" value="submit">Register</button>
+      
+      <script src="registration_validation.js"></script>
+    </form>
+  </body>
+</html>
